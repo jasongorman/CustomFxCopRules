@@ -16,6 +16,7 @@ namespace CustomFxCopRule.Tests
         [TestCase("MethodThatMakesOneCallOnOneSupplier", 0)]
         [TestCase("MethodThatMakesTwoCallsOnOneSupplier", 1)]
         [TestCase("MethodThatMakesTwoCallsOnDifferentSuppliers", 0)]
+        [TestCase("MethodThatCreatesObjectsThenMakesOneFeatureCall", 0)]
         public void MethodsThatMakeMultipleCallsToCollaboratorsHaveFeatureEnvy(string methodName, int expectedProblemCount)
         {
             FeatureEnvyRule rule = new FeatureEnvyRule();
@@ -65,6 +66,12 @@ namespace CustomFxCopRule.Tests
         {
             supplierA.FeatureA();
             supplierB.FeatureA();
+        }
+
+        public void MethodThatCreatesObjectsThenMakesOneFeatureCall()
+        {
+            SupplierA anotherSupplierA = new SupplierA();
+            supplierA.FeatureA();
         }
     }
 
