@@ -1,0 +1,9 @@
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\bin\Debug\CustomFxCopRule.dll
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\bin\Debug\CustomFxCopRule.pdb
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\bin\Debug\FxCopSdk.dll
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\bin\Debug\Microsoft.Cci.dll
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\bin\Debug\Microsoft.VisualStudio.CodeAnalysis.Common.dll
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\bin\Debug\Microsoft.VisualStudio.CodeAnalysis.Interop.dll
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\obj\Debug\CustomFxCopRule.dll
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\obj\Debug\CustomFxCopRule.pdb
+C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\obj\Debug\CustomFxCopRule.csprojResolveAssemblyReference.cache

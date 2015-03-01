@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rules FriendlyName="Jason's custom FxCop rules">
+  <Rule TypeName="FeatureEnvyRule" Category="Custom" CheckId="TT1010">
+    <Name>Feature Envy</Name>
+    <Description>
+      Multiple calls to methods of the same class inside a method stringly suggest that all or part of the method are in the wrong place
+    </Description>
+    <Url></Url>
+    <Resolution Name="Move Method">Move this method to the object of Feature Envy</Resolution>
+    <MessageLevel Certainty="95">Warning</MessageLevel>
+    <Email></Email>
+    <FixCategories>Breaking</FixCategories>
+    <Owner></Owner>
+  </Rule>
+</Rules>
