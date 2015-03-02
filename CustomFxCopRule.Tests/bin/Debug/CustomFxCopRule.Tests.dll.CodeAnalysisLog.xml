@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests\bin\Debug\CustomFxCopRule.Tests.dll">
+   <Modules>
+    <Module Name="customfxcoprule.tests.dll">
+     <Namespaces>
+      <Namespace Name="CustomFxCopRule.Tests">
+       <Types>
+        <Type Name="Client" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#MethodThatMakesTwoCallsOnOneSupplier()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="FeatureEnvyRule" Category="Custom" CheckId="TT1010" Status="Active" Created="2015-03-02 08:50:26Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests" File="FeatureEnvyRuleTests.cs" Line="71">Detected Feature Envy in MethodThatMakesTwoCallsOnOneSupplier for types SupplierA, </Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="FeatureEnvyRule" Category="Custom" CheckId="TT1010">
+   <Name>Feature Envy</Name>
+   <Description>&#xD;&#xA;      Multiple calls to methods of the same class inside a method stringly suggest that all or part of the method are in the wrong place&#xD;&#xA;    </Description>
+   <Resolution Name="Default">Detected Feature Envy in {0} for types {1}</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="customfxcoprule.dll" Version="1.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

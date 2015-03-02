@@ -41,11 +41,17 @@ namespace CustomFxCopRule
 
         private void CheckForFeatureEnvy(TypeNode declaringType)
         {
-            if (collaborators.Contains(declaringType))
+            if (collaborators.Contains(declaringType) && !(IsIgnoredType(declaringType)))
             {
                 enviedTypes.Add(declaringType);
             }
             collaborators.Add(declaringType);
+        }
+
+        private bool IsIgnoredType(TypeNode declaringType)
+        {
+            var fullName = declaringType.FullName;
+            return fullName.StartsWith("System.") || fullName.Contains("Enumerator");
         }
     }
 }

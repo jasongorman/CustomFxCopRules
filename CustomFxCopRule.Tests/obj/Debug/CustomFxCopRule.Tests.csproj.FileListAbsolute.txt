@@ -26,3 +26,5 @@ C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests\bin
 C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests\obj\Debug\CustomFxCopRule.Tests.csprojResolveAssemblyReference.cache
 C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests\obj\Debug\CustomFxCopRule.Tests.dll
 C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests\obj\Debug\CustomFxCopRule.Tests.pdb
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests\bin\Debug\CustomFxCopRule.Tests.dll.CodeAnalysisLog.xml
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule.Tests\bin\Debug\CustomFxCopRule.Tests.dll.lastcodeanalysissucceeded

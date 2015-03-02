@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="CodemanshipRules" Description=" Custom rules by Codemanship for Visual Studio code analysis" ToolsVersion="12.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="TT1010" Action="Warning" />
+  </Rules>
+</RuleSet>

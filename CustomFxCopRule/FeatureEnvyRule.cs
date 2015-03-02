@@ -56,11 +56,16 @@ namespace CustomFxCopRule
             string enviedTypeNames = "";
             foreach (TypeNode type in enviedTypes)
             {
-                enviedTypeNames += type.FullName;
+                enviedTypeNames += GetMemberName(type) + ", ";
             }
             this.Problems.Add(
                 new Problem(new Resolution("Detected Feature Envy in {0} for types {1}",
-                    new string[] {method.FullName, enviedTypeNames})));
+                    new string[] {GetMemberName(method), enviedTypeNames})));
+        }
+
+        private string GetMemberName(Member member)
+        {
+            return member.Name.Name;
         }
     }
 }

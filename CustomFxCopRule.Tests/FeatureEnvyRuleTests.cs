@@ -17,20 +17,31 @@ namespace CustomFxCopRule.Tests
         [TestCase("MethodThatMakesTwoCallsOnOneSupplier", 1)]
         [TestCase("MethodThatMakesTwoCallsOnDifferentSuppliers", 0)]
         [TestCase("MethodThatCreatesObjectsThenMakesOneFeatureCall", 0)]
+        [TestCase("MethodThatUsesSystemTypeFeatureMultipleTimes", 0)]
         public void MethodsThatMakeMultipleCallsToCollaboratorsHaveFeatureEnvy(string methodName, int expectedProblemCount)
         {
             FeatureEnvyRule rule = new FeatureEnvyRule();
             rule.Check(GetMemberToCheck(methodName));
-            Assert.AreEqual(expectedProblemCount, rule.Problems.Count);
+            Assert.AreEqual(expectedProblemCount, GetProblemCount(rule));
+        }
+
+        private static int GetProblemCount(FeatureEnvyRule rule)
+        {
+            return rule.Problems.Count;
         }
 
         private Member GetMemberToCheck(string methodName)
         {
             Type type = typeof(Client);
             AssemblyNode assembly = AssemblyNode.GetAssembly(type.Module.Assembly.Location);
-            TypeNode typeNode = assembly.GetType(Identifier.For(type.Namespace), Identifier.For(type.Name));
+            TypeNode typeNode = assembly.GetType(GetIdentifier(type.Namespace), GetIdentifier(type.Name));
             Member methodToCheck = GetMethodByName(typeNode, methodName);
             return methodToCheck;
+        }
+
+        private static Identifier GetIdentifier(string name)
+        {
+            return Identifier.For(name);
         }
 
         private Member GetMethodByName(TypeNode typeNode, string methodName)
@@ -72,6 +83,12 @@ namespace CustomFxCopRule.Tests
         {
             SupplierA anotherSupplierA = new SupplierA();
             supplierA.FeatureA();
+        }
+
+        public void MethodThatUsesSystemTypeFeatureMultipleTimes()
+        {
+            DateTime now = DateTime.Now;
+            now = DateTime.Now;
         }
     }
 

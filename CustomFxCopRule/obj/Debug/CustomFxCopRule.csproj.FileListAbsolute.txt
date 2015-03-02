@@ -7,3 +7,14 @@ C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\Custo
 C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\obj\Debug\CustomFxCopRule.dll
 C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\obj\Debug\CustomFxCopRule.pdb
 C:\Users\jasongorman\documents\visual studio 2013\Projects\CustomFxCopRule\CustomFxCopRule\obj\Debug\CustomFxCopRule.csprojResolveAssemblyReference.cache
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\CustomFxCopRule.dll
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\CustomFxCopRule.pdb
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\FxCopSdk.dll
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\Microsoft.Cci.dll
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\Microsoft.VisualStudio.CodeAnalysis.Common.dll
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\Microsoft.VisualStudio.CodeAnalysis.Interop.dll
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\obj\Debug\CustomFxCopRule.dll
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\obj\Debug\CustomFxCopRule.pdb
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\CustomFxCopRule.dll.CodeAnalysisLog.xml
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\bin\Debug\CustomFxCopRule.dll.lastcodeanalysissucceeded
+C:\Users\jasongorman\Documents\GitHub\CustomFxCopRules\CustomFxCopRule\obj\Debug\CustomFxCopRule.csprojResolveAssemblyReference.cache
